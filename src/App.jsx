@@ -45,7 +45,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative ">
       {[...Array(12)].map((_, i) => (
         <div key={i} className="twinkle" />
       ))}

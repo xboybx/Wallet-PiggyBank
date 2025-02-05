@@ -12,9 +12,10 @@ export default function AuthForm({ onSubmit, isLogin = false }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-md ">
       {!isLogin && (
         <div className="relative">
+          <h3>Username</h3>
           <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" size={20} />
           <input
             type="text"
@@ -28,6 +29,7 @@ export default function AuthForm({ onSubmit, isLogin = false }) {
       )}
       <div className="relative">
         <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" size={20} />
+        <h3 className='font-semibold'>Email</h3>
         <input
           type="email"
           placeholder="Email"
@@ -39,6 +41,7 @@ export default function AuthForm({ onSubmit, isLogin = false }) {
       </div>
       <div className="relative">
         <KeyRound className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70" size={20} />
+        <h3 className='font-semibold'>Password</h3>
         <input
           type="password"
           placeholder="Password"
